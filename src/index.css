@@ -1,0 +1,42 @@
+.tareasapp {
+
+  background:  #fff;
+  margin: 100px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+              0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.view {
+  position: relative;  
+  padding-right: 30px; 
+  display: flex;
+  align-items: center;
+}
+
+.destroy {
+  position: absolute;
+  right: 0;  /* Se alinea a la derecha del contenedor */
+  background: none;
+  border: none;
+  color: red;
+  display: none;
+  font-size: 18px;
+}
+
+.view:hover .destroy {
+  display: block;  
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
