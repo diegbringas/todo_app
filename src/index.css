@@ -1,22 +1,34 @@
+body {
+  min-width: max-content;
+  max-width: none;
+  background-color: #a6a5af;
+  margin:50px
+
+}
+
+
 .tareasapp {
 
-  background:  #fff;
-  margin: 100px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
-              0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-width: max-content;
 
+}
+.container {
+  display: flex;
 }
 
 .view {
   position: relative;  
-  padding-right: 30px; 
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding: 5vh;
 }
 
 .destroy {
   position: absolute;
-  right: 0;  /* Se alinea a la derecha del contenedor */
+  right: 0;  
   background: none;
   border: none;
   color: red;
@@ -28,7 +40,7 @@
   display: block;  
 }
 
-.board {
+.Board {
   display: flex;
   justify-content: space-between;
 }
@@ -37,6 +49,69 @@
   flex: 1;
   padding: 10px;
   margin: 10px;
+  background: #f3f3f7;
   border: 1px solid #ccc;
+  min-height: 300px; /* Altura mínima */
+  max-width: 30%; 
+  overflow-y: auto; 
+  max-height: 400px; 
 }
+
+.tarea-contador{
+  justify-content: center;
+  display: flex;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-tarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+}
+
+.form-tarea h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tarea-lista{
+  list-style-type: none;
+  padding-inline-start: 20px;
+  
+}
+
+.tarea-lista li {
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #d0d5e0;
+  border-top: 7px solid;
+  box-shadow: 0 8px 16px rgba(#333, 0.1);
+}
+.add-tarea1 {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-tarea2 {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarea3 {
+  display: flex;
+
+}
+
+.label-tarea{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 

@@ -19,11 +19,11 @@ export const Footer: React.FC<Props> = ({
 }) => {
 
   return (
-    <footer className="footer">
+    <footer>
       <span className="tarea-contador">
         <strong>{activeCount}</strong> tarea{activeCount !== 1 ? 's' : ''} pendiente{activeCount !== 1 ? 's' : ''}
       </span>
-
+    
       <Filters
         filterSelected={filterSelected}
         onFilterChange={handleFilterChange}
